@@ -24,7 +24,8 @@ pipeline {
             }
         }
 
-        post{
+        post
+        {
             always{
                 echo 'i am awesome .i run always'
             }
