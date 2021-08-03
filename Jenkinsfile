@@ -3,10 +3,10 @@
 pipeline {
     agent any
 
-    enviroment{
-        mavenHome=tool 'myMaven'
+    environment {
+        mavenHome = tool 'myMaven'
 
-        PATH ="$mavenHome/bin:$PATH"
+        PATH = "$mavenHome/bin:$PATH"
     }
 
     stages {
@@ -19,7 +19,6 @@ pipeline {
                 echo "BUILD_ID - $env.BUILD_ID"
                 echo "BUILD_TAG - $env.BUILD_TAG"
                 echo "BUILD_URL - $env.BUILD_URL"
-
             }
         }
 
