@@ -4,7 +4,7 @@ pipeline {
     agent any
 
     environment {
-        mavenHome = tool 'C:\apache-maven-3.6.3\bin'
+        mavenHome = tool 'myMaven'
 
         PATH = "$mavenHome/bin:$PATH"
     }
